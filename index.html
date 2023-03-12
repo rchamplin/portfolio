@@ -258,9 +258,9 @@
 								<!-- <form id="message" method="post" action="http://10.0.1.26:5500/index.html#thanks" onsubmit="save_message_fields();"> -->
 								<!-- <form id="message" method="post" action="#thanks">  -->
 								<!-- <form id="form_message" method="post" action="https://formsubmit.co/rchamplin@arizona.edu" onsubmit="save_message_fields();"> -->
-								<form id="form_message" method="post" action="https://formsubmit.co/rchamplin@email.arizona.edu" onsubmit="save_message_fields();" onreset="do_message_reset();">
+								<!-- <form id="form_message" method="post" action="https://formsubmit.co/rchamplin@email.arizona.edu" onsubmit="save_message_fields();" onreset="do_message_reset();"> -->
 								<!-- <form id="form_message"  onsubmit="save_message_fields();" onreset="do_message_reset();"> -->
-								<!-- <form id="form_message" method="post" action="https://formsubmit.co/rchamplin@itcap.com" onsubmit="save_message_fields();"> -->
+								<form id="form_message" method="post" action="https://formsubmit.co/rchamplin@itcap.com" onsubmit="save_message_fields();"  onreset="do_message_reset();">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -324,13 +324,11 @@
 
 									function get_message_fields() {
 										if (localStorage.getItem("sent_message_name") != "" || localStorage.getItem("sent_message_email") != "" || localStorage.getItem("sent_message_text")) {
-											// document.getElementById("sent_fields").style.visibility='visible';
 											document.getElementById("sent_fields").style.display="block";
 											document.getElementById("sent_message_name").value = localStorage.getItem("sent_message_name");
 											document.getElementById("sent_message_email").value = localStorage.getItem("sent_message_email");
 											document.getElementById("sent_message_text").innerHTML = localStorage.getItem("sent_message_text");
 										} else {
-											// document.getElementById("sent_fields").style.visibility='hidden';
 											document.getElementById("sent_fields").style.display="none";
 										}
 
