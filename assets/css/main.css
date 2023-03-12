@@ -5,7 +5,7 @@
 	Rick Champlin - Portfolio
 	By: Rick Champlin
 	Last Updated: 3/10/2023
-	Public URL: https://rchamplin.github.io/rick.github.io/
+	Public URL: https://rchamplin.github.io/portfolio/
 */
 
 html, body, div, span, applet, object,
@@ -40,12 +40,18 @@ a.in_text {
 	-ms-transition: all 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
 	border-bottom: dotted 1px;
-	color:aquamarine;
+	color:#7fffd4;
 	text-decoration: none;
 }
 
 a.in_text:hover {
-	color:lawngreen;
+	color:rgb(130, 238, 130);
+	font-weight:500;
+}
+
+a.in_text b:hover {
+	color:rgb(130, 238, 130);
+	font-weight:bold;
 }
 
 ol, ul {
@@ -85,6 +91,28 @@ input, select, textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
+}
+
+#sending_message_div {
+	color:aquamarine;
+	position:absolute;
+	float:none ;
+	margin-top: -7.2rem;
+	left: -.2rem;
+	font-size:6rem;
+	display:none;
+	height: 6rem;
+	line-height: 6rem;
+	text-align: center;
+	width: 100%;
+	opacity: 80%;
+}
+
+#sending_message_text {
+	position:absolute;
+	display:inline-block;
+	font-size:.8rem;
+	margin-left: -4.5rem;
 }
 
 /* Basic */
@@ -1114,6 +1142,12 @@ input, select, textarea {
 			font-weight: 600;
 		}
 
+		input[type="submit"]:hover,
+		.button:hover {
+			background-color:aquamarine;
+			color:#000000;
+		}
+
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
 		input[type="reset"]:disabled,
@@ -1566,6 +1600,7 @@ input, select, textarea {
 		z-index: 3;
 	}
 
+	
 		#main article {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
@@ -1593,8 +1628,8 @@ input, select, textarea {
 			}
 
 			#main article .close {
-				display: block;
-				position: absolute;
+				display: none;
+				/* position: absolute;
 				top: 0;
 				right: 0;
 				width: 4rem;
@@ -1602,10 +1637,43 @@ input, select, textarea {
 				cursor: pointer;
 				text-indent: 4rem;
 				overflow: hidden;
-				white-space: nowrap;
+				white-space: nowrap; */
 			}
 
-				#main article .close:before {
+			#home_button {
+				position: absolute;
+				top: .5rem;
+				right: .7rem;
+				font-size:12pt;
+				font-weight: bold;
+				border-radius: 100%;
+				box-shadow: inset 0 0 0 1px #ffffff;
+				display: inline-block;
+				height: 2.25rem;
+				line-height: 2.25rem;
+				text-align: center;
+				width: 2.25rem;
+			}
+			  
+			#home_button:hover {
+				background-color:rgba(127, 255, 212, 0.445);
+				color:#ffffff;
+			}
+
+			/* #back_button {
+				position: absolute;
+				top: .5rem;
+				left: .5rem;
+				font-size:9pt;
+				font-weight: bold;
+			}
+			  
+			#back_button:hover {
+				background-color:rgba(127, 255, 212, 0.445);
+				color: black;
+			} */
+			
+			  /* #main article .close:before {
 					-moz-transition: background-color 0.2s ease-in-out;
 					-webkit-transition: background-color 0.2s ease-in-out;
 					-ms-transition: background-color 0.2s ease-in-out;
@@ -1622,16 +1690,16 @@ input, select, textarea {
 					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
-				}
+				} */
 
-				#main article .close:hover:before {
-					/* background-color: rgba(255, 255, 255, 0.075); */
+				/* #main article .close:hover:before {
+								background-color: rgba(255, 255, 255, 0.075);
 					background-color:crimson;
 				}
 
 				#main article .close:active:before {
 					background-color: rgba(255, 255, 255, 0.175);
-				}
+				} */
 
 		@media screen and (max-width: 736px) {
 
@@ -1639,13 +1707,13 @@ input, select, textarea {
 				padding: 3.5rem 2rem 0.5rem 2rem ;
 			}
 
-				#main article .close:before {
+				/* #main article .close:before {
 					top: 0.875rem;
 					left: 0.875rem;
 					width: 2.25rem;
 					height: 2.25rem;
 					background-size: 14px 14px;
-				}
+				} */
 
 		}
 
@@ -1699,19 +1767,47 @@ input, select, textarea {
 				overflow: hidden;
 				white-space: nowrap;
 			}
+
 			#back_button {
 				position: absolute;
 				top: .5rem;
 				left: .5rem;
-				font-size:9pt;
+				font-size:12pt;
 				font-weight: bold;
-			  }
+				border-radius: 20%;
+				box-shadow: inset 0 0 0 1px #ffffff;
+				display:inline-block;
+				height: 2.1rem;
+				line-height: 2.1rem;
+				text-align:center;
+				width: 2.1rem;
+			}
 			  
-			 #back_button:hover {
-				background-color:rgba(127, 255, 212, 0.445);
+			#back_button:hover {
+				background-color:aquamarine;
 				color: black;
 			  }
+
+			#home_button {
+				position: absolute;
+				top: .5rem;
+				right: .7rem;
+				font-size:12pt;
+				font-weight: bold;
+				border-radius: 100%;
+				box-shadow: inset 0 0 0 1px #ffffff;
+				display: inline-block;
+				height: 2.25rem;
+				line-height: 2.25rem;
+				text-align: center;
+				width: 2.25rem;
+			}
 			  
+			#home_button:hover {
+				background-color:aquamarine;
+				color: black;
+			}
+
 
 		@media screen and (max-width: 736px) {
 
