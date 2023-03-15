@@ -46,12 +46,23 @@ a.in_text {
 
 a.in_text:hover {
 	color:rgb(130, 238, 130);
-	font-weight:500;
+	font-weight:bolder;
 }
 
-a.in_text b:hover {
+a.full_text {
+	-moz-transition: all 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out;
+	border-bottom: dotted 1px;
+	border-color: aquamarine;
+	color:white;
+	text-decoration: none;
+}
+
+a.full_text:hover, a.full_text:hover * {
 	color:rgb(130, 238, 130);
-	font-weight:bold;
+	/* font-weight:bold; */
 }
 
 ol, ul {
