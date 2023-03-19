@@ -20,6 +20,7 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+
 				<!-- Header -->
 					<header id="header">
 						<div class="logo" style="background-image: url('images/Me_NoBackground_160x160.jpg'); background-position: center; background-size:contain;">
@@ -41,12 +42,15 @@
 						</nav>
 					</header>
 
+
 				<!-- Main -->
 					<div id="main">
+						<a href="#" id="float_home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
+						<a id="float_back_button"  onclick="do_back_button();" title="Back" ><span class="fa fa-arrow-left"></span></a>
+
 
 						<!-- Intro -->
-							<article id="intro" >
-								<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
+						<article id="intro" >
 								<h2 class="major">Rick Champlin</h2>
 								<span class="image main" ><img src="images/Me_At_Desk-Wide.jpg"  alt="" /></span>
 								<p style="margin-top: -1.8rem;"><b>Researcher | Software&nbsp;Engineer | Electrical&nbsp;Engineer | IT&nbsp;Manager</b></p>
@@ -59,122 +63,124 @@
 										<li><b>Linux, SQL, IIS Server Admin</b></li>
 										<li><b>Transact-SQL, VB, C++</b></li>
 										<li><b>Java, HTML, CSS</b></li>
-										<li><b><a class="full_text" href="#python1" ><b>Python</b></a>, <a class="full_text" href="#bash_script1" ><b>Bash Script</b></a></b></li>
+										<li><b><a class="full_text" href="javascript:javascript:do_link_to('#python1', 'python1', 'intro_python1');" id="intro_python1"><b>Python</b></a>,
+											<a class="full_text" href="javascript:javascript:do_link_to('#bash_script1', 'bash_script1', 'intro_bash_script1');" id="intro_bash_script1"><b>Bash Script</b></a></b></li>
 										<li><b>Machine & Macro Code</b></li>
 										<li><b><a class="full_text" href="https://github.com/rchamplin" target="_blank"><b>GitHub Software Management</b></a></b></li>
 									</ul>
 								</p>
 								<p style="margin-top: -1rem;"><b>Education:</b>	
 									<ul style="list-style-type:disc; margin-top: -2rem;">
-										<li><a class="full_text" href="#UA_Engineering"><b>University of Arizona</b> Tucson, AZ - <b>1985</b></a><br />
+										<li><a class="full_text" href="javascript:javascript:do_link_to('#UA_Engineering', 'UA_Engineering', 'intro_UA_Engineering');" id="intro_UA_Engineering"><b>University of Arizona</b> Tucson, AZ - <b>1985</b></a><br />
 											<b>B.S.E.E.</b>, Minors: Computer Programming & Broadcasting 
 										</li>
-										<li style="margin-top: .5rem;"><a class="full_text" href="#Special_Projects_HS" ><b>Special Projects HS</b> (now called University HS) & Rincon HS, Tucson, AZ - <b>1979</b></a><br />
+										<li style="margin-top: .5rem;"><a class="full_text" href="javascript:javascript:do_link_to('#Special_Projects_HS', 'Special_Projects_HS', 'intro_Special_Projects_HS');" id="intro_Special_Projects_HS"><b>Special Projects HS</b> (now called University HS) & Rincon HS, Tucson, AZ - <b>1979</b></a><br />
 											Equivalent of <b>A.E.E.T. Degree</b> from Special Projects
 										</li>
 									 </ul>
 								 </p>
-							</article>
+						</article>
+
 
 						<!-- Work -->
-							<article id="work">
-								<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
-								<h2 class="major" style="font-size: 110%;">University of Arizona</h2>
-								<p style="margin-top: -24px; "><h7>(2022 to Current)</h7>&nbsp;&nbsp;&nbsp; <h8>Researcher&nbsp;|&nbsp;Software&nbsp;Engineer&nbsp;|&nbsp;Mentor</h8></p>
-								<span class="image main" style="margin-top: -20px; "><img src="images/UA_cropped.jpg" alt="" /></span>
-								<p style="margin-top: -1.5rem;">Currently, I am assigned to the <a class="in_text" href="https://ml4ai.github.io/tomcat/" target="_blank">ToMCAT&nbsp;Research&nbsp;Program</a>.</p>
-								<p style="margin-top: -1.5rem;"><b>Responsibilities:</b></p>
-									<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem; columns: 2;-webkit-columns: 2;-moz-columns: 2;">
-										<li><b>Develop Software</b></li>
-										<li><b>Create Procedures & Documentation</b></li>
-										<li><b>Oversee Lab Operations</b></li>
-										<li><b>Help run the Experiments</b></li>
-										<li><b>Mentor PhD & Undergrad Students</b></li>
-									</ul>
-								</p>
-								<p style="margin-top: -1.5rem;"><b>Achievements:</b></p>
-									<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem;">
-										<li style="margin-bottom: .35rem;">Developed, programmed and modified several programs used in the lab. For&nbsp;example:
-											"<b>Run&nbsp;Experiment</b>", "<a class="full_text" href="#bash_script2" ><b>Say&nbsp;Announcements</b></a>",
-											"<b>Lab&nbsp;Recorder</b>", and "<a class="full_text" href="#bash_script1" ><b>Export&nbsp;Redcap&nbsp;Data</b></a>", just to name a few.</li>
-										<li style="margin-bottom: .35rem;">Solved the "<b>EEG - Start LSL Streaming</b>" problem. I modified configuration files and procedures to resolve the problem.</li>
-										<li style="margin-bottom: .35rem;">Solved the "<b>fNIRS - Aurora Program Crashing</b>" problem.
-											I worked with "<b>NIRx</b>" the maker of our "<b>fNIRS Boxes</b>" and the "<b>Aurora Program</b>" to troubleshoot and come up with a solution to the problem.
-											The solution required me to re-design and re-configure the "<b>fNIRS Network</b>" in the lab.
-											The "<b>Aurora Program</b>" has been working flawlessly ever since.</li>
-										<li style="margin-bottom: .35rem;">Learned every aspect of setting up and running "<b>ToMCAT Experiments</b>".
-											I have attended, help set up and assisted in running over <b>50 Pilot & Dry Run Experiments</b> to date.</li>
-										<li style="margin-bottom: .35rem;">A ongoing process, I update the "<b>Experiment Manual & Procedures</b>" documentation.</li>
-										<li style="margin-bottom: .35rem;">I have created a "<b>Network & Wiring Diagram</b>" for the ToMCAT Lab.</li>
-										<li>I have supervised and mentored several undergrad students assigned to me.</li>
-									</ul>
-								</p>
-							</article>
+						<span id="work_ua"></span>
+						<article id="work">
+							<h2 class="major" style="font-size: 110%;">University of Arizona</h2>
+							<p style="margin-top: -24px; "><h7>(2022 to Current)</h7>&nbsp;&nbsp;&nbsp; <h8>Researcher&nbsp;|&nbsp;Software&nbsp;Engineer&nbsp;|&nbsp;Mentor</h8></p>
+							<span class="image main" style="margin-top: -20px; "><img src="images/UA_cropped.jpg" alt="" /></span>
+							<p style="margin-top: -1.5rem;">Currently, I am assigned to the <a class="in_text" href="https://ml4ai.github.io/tomcat/" target="_blank">ToMCAT&nbsp;Research&nbsp;Program</a>.</p>
+							<p style="margin-top: -1.5rem;"><b>Responsibilities:</b></p>
+								<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem; columns: 2;-webkit-columns: 2;-moz-columns: 2;">
+									<li><b>Develop Software</b></li>
+									<li><b>Create Procedures & Documentation</b></li>
+									<li><b>Oversee Lab Operations</b></li>
+									<li><b>Help run the Experiments</b></li>
+									<li><b>Mentor PhD & Undergrad Students</b></li>
+								</ul>
+							</p>
+							<p style="margin-top: -1.5rem;"><b>Achievements:</b></p>
+								<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem;">
+									<li style="margin-bottom: .35rem;">Developed, programmed and modified several programs used in the lab. For&nbsp;example:
+										"<b>Run&nbsp;Experiment</b>", "<a class="full_text" href="javascript:javascript:do_link_to('#bash_script2', 'bash_script2', 'work_bash_script2');" id="work_bash_script2"><b>Say&nbsp;Announcements</b></a>",
+										"<b>Lab&nbsp;Recorder</b>", and "<a class="full_text" href="javascript:javascript:do_link_to('#bash_script1', 'bash_script1', 'work_bash_script1');" id="work_bash_script1"><b>Export&nbsp;Redcap&nbsp;Data</b></a>", just to name a few.</li>
+									<li style="margin-bottom: .35rem;">Solved the "<b>EEG - Start LSL Streaming</b>" problem. I modified configuration files and procedures to resolve the problem.</li>
+									<li style="margin-bottom: .35rem;">Solved the "<b>fNIRS - Aurora Program Crashing</b>" problem.
+										I worked with "<b>NIRx</b>" the maker of our "<b>fNIRS Boxes</b>" and the "<b>Aurora Program</b>" to troubleshoot and come up with a solution to the problem.
+										The solution required me to re-design and re-configure the "<b>fNIRS Network</b>" in the lab.
+										The "<b>Aurora Program</b>" has been working flawlessly ever since.</li>
+									<li style="margin-bottom: .35rem;">Learned every aspect of setting up and running "<b>ToMCAT Experiments</b>".
+										I have attended, help set up and assisted in running over <b>50 Pilot & Dry Run Experiments</b> to date.</li>
+									<li style="margin-bottom: .35rem;">A ongoing process, I update the "<b>Experiment Manual & Procedures</b>" documentation.</li>
+									<li style="margin-bottom: .35rem;">I have created a "<b>Network & Wiring Diagram</b>" for the ToMCAT Lab.</li>
+									<li>I have supervised and mentored several undergrad students assigned to me.</li>
+								</ul>
+							</p>
+						</article>
 
-							<h2 class="major"></h2>
-							
-							<article id="work">
-								<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
-								<h2 class="major" style="font-size: 110%;">Itcap Inc.</h2>
-								<p style="margin-top: -24px; "><h7>(1990 to 2021)</h7>&nbsp;&nbsp;&nbsp; <h8>CIO&nbsp;|&nbsp;IT&nbsp;Manager&nbsp;|&nbsp;Software&nbsp;Engineer&nbsp;</h8></p>
-								<span class="image main" style="margin-top: -20px; "><img src="images/DRA_N1_1019x311.jpg" alt="" /></span>
-								<p style="margin-top: -1.5rem;"><b>ITCAP Inc.</b> (dba: <b>DRA Software Training</b> and <b>DRA Consulting</b>) went out of business in early 2021, mainly because of the COVID-19 pandemic causing loss of contracts.</p>
-								<p style="margin-top: -1.5rem;"><b>Responsibilities:</b></p>
-									<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem; columns: 2;-webkit-columns: 2;-moz-columns: 2;">
-										<li><b>VP & CIO of Technology</b></li>
-										<li><b>IT Manager</b></li>
-										<li><b>Software Engineer</b></li>
-										<li><b>Manage Consulting Services</b></li>
-										<li><b>Design Technical Infrastructure</b></li>
-										<li><b>Maintain Servers & Domains</b></li>
-									</ul>
-								</p>
-								<p style="margin-top: -1.5rem;"><b>Achievements:</b></p>
-									<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem;">
-										<li style="margin-bottom: .35rem;">Designed and built Itcap's <b>Technical Infrastructure</b> including: <b>Server Racks</b>, <b>Phone System</b>, <b>Network</b> and <b>Domains</b>.</li>
-										<li style="margin-bottom: .35rem;">Migrated Itcap's <b>Server & Network Infrastructure</b> to a <b>Virtual Infrastructure</b> I designed on <b>AWS</b>.</li>
-										<li style="margin-bottom: .35rem;">Developed and programmed all of Itcap's in house: <b>Databases</b>, <b>Software & Web Apps</b>, and <b>Public Websites</b>.</li>
-										<li style="margin-bottom: .35rem;">Developed Web Apps for Itcap's partners/clients like: <b>Verizon</b>, <b>Boeing</b>, and <b>Nationwide</b>.</li>
-										<li>For over 31 years, <b>Managed Itcap's IT Department</b> and <b>Maintained</b>: <b>Servers</b>, <b>Networks & Security</b>, and <b>Domains</b>.</li>
-									</ul>
-								</p>
-							</article>
+						<h2 class="major"></h2>
 
-							<h2 class="major"></h2>
-							
-							<article id="work">
-								<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
-								<h2 class="major">Garrett Airesearch<p style="font-size:smaller; font-style: normal;margin-bottom: 0%; text-transform: none; letter-spacing: normal;">(now called Honeywell)</p></h2>
-								<p style="margin-top: -24px; "><h7>(1985 to 1990)</h7>&nbsp;&nbsp;&nbsp; <h8>Engineer&nbsp;|&nbsp;Staff&nbsp;Technician&nbsp;</h8></p>
-								<span class="image main" style="margin-top: -20px; "><img src="images/Garrett_Airesearch_cropped.jpg" alt="" /></span>
-								<p style="margin-top: -1.5rem;"><b>Garrett Airesearch Electronic Tucson Division</b> is now called <b>Honeywell</b>.
-									I worked at the main facility located at the base of the Catalina Mountains in Oro Valley.
-									I was laid-off in late 1990 due to military cut backs on the project that I was working on at the time, "B2 Stealth Bomber".</p>
-								<p style="margin-top: -1.5rem;"><b>Responsibilities:</b></p>
-									<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem; columns: 2;-webkit-columns: 2;-moz-columns: 2;">
-										<li><b>Air Data Systems Technician</b></li>
-										<li><b>Support to Production Technicians</b></li>
-										<li><b>Liaison between Production & Engineering</b></li>
-										<li><b>Software & Database Engineer</b></li>
-										<li><b>Electronic Engineer</b></li>
-										<li><b>Failure Analysis Engineer</b></li>
-									</ul>
-								</p>
-								<p style="margin-top: -1.5rem;"><b>Achievements:</b></p>
-									<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem;">
-										<li style="margin-bottom: .35rem;">Contributed to the design of the “<b>Failure Interrogation Detection & Electronic Reporting System (FIDER)</b>" for the "<b>B2 Stealth Bomber</b>".</li>
-										<li style="margin-bottom: .35rem;">Contributed to the “<b>Central Air Data Computer (CADC)</b>" prototype development & test plan for the “<b>B1B Bomber</b>”.</li>
-										<li style="margin-bottom: .35rem;">Contributed design modification to the “<b>Sonobuoy Launch Computer</b>” for the “<b>Sikorsky SH-60 Seahawk</b>”.</li>
-										<li style="margin-bottom: .35rem;">Contributed “bring-up-to-date” design modification to the “<b>Central Air Data Computer (CADC)</b>" for the “<b>AV-8B Harrier II</b>” and the “<b>A-10 Thunderbolt</b>”.</li>
-										<li style="margin-bottom: .35rem;">In 1988, awarded “<b>Suggester of the Year</b>” by the consortium of “<b>Fortune 500 Companies</b>”.</li>
-										<li>Provided technical & engineering support to "<b>Production Technicians</b>" for many products.</li>
-									</ul>
-								</p>
-							</article>
+						<span id="work_itcap"></span>
+						<article id="work">
+							<h2 class="major" style="font-size: 110%;">Itcap Inc.</h2>
+							<p style="margin-top: -24px; "><h7>(1990 to 2021)</h7>&nbsp;&nbsp;&nbsp; <h8>CIO&nbsp;|&nbsp;IT&nbsp;Manager&nbsp;|&nbsp;Software&nbsp;Engineer&nbsp;</h8></p>
+							<span class="image main" style="margin-top: -20px; "><img src="images/DRA_N1_1019x311.jpg" alt="" /></span>
+							<p style="margin-top: -1.5rem;"><b>ITCAP Inc.</b> (dba: <b>DRA Software Training</b> and <b>DRA Consulting</b>) went out of business in early 2021, mainly because of the COVID-19 pandemic causing loss of contracts.</p>
+							<p style="margin-top: -1.5rem;"><b>Responsibilities:</b></p>
+								<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem; columns: 2;-webkit-columns: 2;-moz-columns: 2;">
+									<li><b>VP & CIO of Technology</b></li>
+									<li><b>IT Manager</b></li>
+									<li><b>Software Engineer</b></li>
+									<li><b>Manage Consulting Services</b></li>
+									<li><b>Design Technical Infrastructure</b></li>
+									<li><b>Maintain Servers & Domains</b></li>
+								</ul>
+							</p>
+							<p style="margin-top: -1.5rem;"><b>Achievements:</b></p>
+								<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem;">
+									<li style="margin-bottom: .35rem;">Designed and built Itcap's <b>Technical Infrastructure</b> including: <b>Server Racks</b>, <b>Phone System</b>, <b>Network</b> and <b>Domains</b>.</li>
+									<li style="margin-bottom: .35rem;">Migrated Itcap's <b>Server & Network Infrastructure</b> to a <b>Virtual Infrastructure</b> I designed on <b>AWS</b>.</li>
+									<li style="margin-bottom: .35rem;">Developed and programmed all of Itcap's in house: <b>Databases</b>, <b>Software & Web Apps</b>, and <b>Public Websites</b>.</li>
+									<li style="margin-bottom: .35rem;">Developed Web Apps for Itcap's partners/clients like: <b>Verizon</b>, <b>Boeing</b>, and <b>Nationwide</b>.</li>
+									<li>For over 31 years, <b>Managed Itcap's IT Department</b> and <b>Maintained</b>: <b>Servers</b>, <b>Networks & Security</b>, and <b>Domains</b>.</li>
+								</ul>
+							</p>
+						</article>
+
+						<h2 class="major"></h2>
+
+						<span id="work_garrett"></span>
+						<article id="work">
+							<h2 class="major">Garrett Airesearch<p style="font-size:smaller; font-style: normal;margin-bottom: 0%; text-transform: none; letter-spacing: normal;">(now called Honeywell)</p></h2>
+							<p style="margin-top: -24px; "><h7>(1985 to 1990)</h7>&nbsp;&nbsp;&nbsp; <h8>Engineer&nbsp;|&nbsp;Staff&nbsp;Technician&nbsp;</h8></p>
+							<span class="image main" style="margin-top: -20px; "><img src="images/Garrett_Airesearch_cropped.jpg" alt="" /></span>
+							<p style="margin-top: -1.5rem;"><b>Garrett Airesearch Electronic Tucson Division</b> is now called <b>Honeywell</b>.
+								I worked at the main facility located at the base of the Catalina Mountains in Oro Valley.
+								I was laid-off in late 1990 due to military cut backs on the project that I was working on at the time, "B2 Stealth Bomber".</p>
+							<p style="margin-top: -1.5rem;"><b>Responsibilities:</b></p>
+								<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem; columns: 2;-webkit-columns: 2;-moz-columns: 2;">
+									<li><b>Air Data Systems Technician</b></li>
+									<li><b>Support to Production Technicians</b></li>
+									<li><b>Liaison between Production & Engineering</b></li>
+									<li><b>Software & Database Engineer</b></li>
+									<li><b>Electronic Engineer</b></li>
+									<li><b>Failure Analysis Engineer</b></li>
+								</ul>
+							</p>
+							<p style="margin-top: -1.5rem;"><b>Achievements:</b></p>
+								<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem;">
+									<li style="margin-bottom: .35rem;">Contributed to the design of the “<b>Failure Interrogation Detection & Electronic Reporting System (FIDER)</b>" for the "<b>B2 Stealth Bomber</b>".</li>
+									<li style="margin-bottom: .35rem;">Contributed to the “<b>Central Air Data Computer (CADC)</b>" prototype development & test plan for the “<b>B1B Bomber</b>”.</li>
+									<li style="margin-bottom: .35rem;">Contributed design modification to the “<b>Sonobuoy Launch Computer</b>” for the “<b>Sikorsky SH-60 Seahawk</b>”.</li>
+									<li style="margin-bottom: .35rem;">Contributed “bring-up-to-date” design modification to the “<b>Central Air Data Computer (CADC)</b>" for the “<b>AV-8B Harrier II</b>” and the “<b>A-10 Thunderbolt</b>”.</li>
+									<li style="margin-bottom: .35rem;">In 1988, awarded “<b>Suggester of the Year</b>” by the consortium of “<b>Fortune 500 Companies</b>”.</li>
+									<li>Provided technical & engineering support to "<b>Production Technicians</b>" for many products.</li>
+								</ul>
+							</p>
+						</article>
+
 
 						<!-- Programming -->
 						<article id="programming">
-							<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
 							<h2 class="major">Programming</h2>
 							<p style="margin-top: -30px; ">Examples of my work:</p>
 							<span class="image main" style="margin-top: -1rem;"><img src="images/Programming3_cropped.jpg" alt="" /></span>
@@ -186,17 +192,16 @@
 							<p style="margin-top: -1rem;"><b>Just click on link to see an example of my work:</b><br />
 							   (Note: The code window is scrollable, just hold your mouse over the window.)</p>
 							<ul style="list-style-type:square; margin-top: -2rem;">
-								<li><a class="full_text" href="#bash_script1" ><b>Bash Script</b> - Export RedCAP Data to Experiment Data Directories.</a></li>
-								<li><a class="full_text" href="#bash_script2" ><b>Bash Script</b> - Verbally make Announcements into Participant’s Earbuds & Server.</a></li>
-								<li><a class="full_text" href="#python1" ><b>Python</b> - API Interface to the UA ReDCAP Database.</a></li>
-								<li><a class="full_text" href="#diagram1" ><b>Network & Wiring</b> - Lab Network & Wiring Design and Layout.</a></li>
+								<li><a class="full_text" href="javascript:javascript:do_link_to('#bash_script1', 'bash_script1', 'prog_bash_script1');" id="prog_bash_script1"><b>Bash Script</b> - Export RedCAP Data to Experiment Data Directories.</a></li>
+								<li><a class="full_text" href="javascript:javascript:do_link_to('#bash_script2', 'bash_script2', 'prog_bash_script2');" id="prog_bash_script2"><b>Bash Script</b> - Verbally make Announcements into Participant’s Earbuds & Server.</a></li>
+								<li><a class="full_text" href="javascript:javascript:do_link_to('#python1', 'python1', 'prog_python1');" id="prog_python1"><b>Python</b> - API Interface to the UA ReDCAP Database.</a></li>
+								<li><a class="full_text" href="javascript:javascript:do_link_to('#diagram1', 'diagram1', 'prog_diagram1');" id="prog_diagram1"><b>Network & Wiring</b> - Lab Network & Wiring Design and Layout.</a></li>
 							</ul>	
 						</article>
 
+
 						<!-- Programming Examples-->
 						<article id="bash_script1" class="sub">
-							<a href="javascript:javascript:history.go(-1)" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a>
-							<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
 							<h2 class="major">Bash Script</h2>
 							<p style="margin-top: -30px; ">Export RedCAP Data to Experiment Data Directories:</p>
 						    <span class="image main" style="height: 400px; margin-top: -1rem;"  data-simplebar><img src="images/Bash_Script_Example1-redacted.jpg" alt="" style="object-fit:none; align-content: normal; margin-top: 0; margin-left: 0; width:max-content;"/></span>
@@ -205,8 +210,6 @@
 						</article>
 
 						<article id="bash_script2" class="sub">
-							<a href="javascript:javascript:history.go(-1)" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a>
-							<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
 							<h2 class="major">Bash Script</h2>
 							<p style="margin-top: -30px;">Verbally make Announcements into Participant’s Earbuds and on Server:</p>
 						    <span class="image main" style="height: 400px; margin-top: -1rem;"  data-simplebar><img src="images/Bash_Script_Example2-redacted.jpg" alt="" style="object-fit:none; align-content: normal; margin-top: 0; margin-left: 0; width:max-content;"/></span>
@@ -216,8 +219,6 @@
 						</article>
 
 						<article id="python1" class="sub">
-							<a href="javascript:javascript:history.go(-1)" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a>
-							<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
 							<h2 class="major">Python</h2>
 							<p style="margin-top: -30px; ">API Interface to the UA ReDCAP Database:</p>
 						    <span class="image main" style="height: 400px; margin-top: -1rem;"  data-simplebar><img src="images/Python_Example1.jpg" alt="" style="object-fit:none; align-content: normal; margin-top: 0; margin-left: 0; width:max-content;"/></span>
@@ -225,33 +226,17 @@
 						</article>
 
 						<article id="diagram1" class="sub">
-							<a href="javascript:javascript:history.go(-1)" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a>
-							<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
 							<h2 class="major">Network Diagram</h2>
 							<p style="margin-top: -30px; ">Lab Network and Wiring Diagram:</p>
 							<span class="image main" style="margin-top: -1rem;"><img src="images/Network_and_Wiring_Diagram_Exampl1-redacted.jpg" alt="" /></span>
 							<p style="margin-top: -1.5rem;">This is a Diagram of the Network and Wiring schematic I designed for the UA <a class="in_text" href="https://ml4ai.github.io/tomcat/" target="_blank">ToMCAT&nbsp;Research&nbsp;Program</a> Lab.</p>
 						</article>
 
-						<!-- <article id="test" class="sub"> -->
-							<!-- <a href="javascript:javascript:history.go(-1)" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a> -->
-							<!-- <a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a> -->
-							<!-- <h2 class="major">Open Outside Doc</h2> -->
-							<!-- <p style="margin-top: -30px; ">A link to open a file on my computer:</p> -->
-							<!-- <iframe src ="http://10.0.1.81:81/monitor2.htm" width="100%" height="400"> -->
-								<!-- <p>Your browser does not support iframes.</p> -->
-							<!-- </iframe> -->
-							<!-- <p><a href="ms-excel:ofe|u|file:///C:/Users/rcham/Documents/ToMCAT/REDCap%20API/ToMCAT-REDCap_Data_Exported_to_Experiment_Data-(Tracker).xlsx">Open in Excel</a></p> -->
-							<!-- <span class="image main" style="margin-top: -1rem;"><img src="images/Network_and_Wiring_Diagram_Exampl1-redacted.jpg" alt="" /></span> -->
-							<!-- <p style="margin-top: -1.5rem;">This is a Diagram of the Network and Wiring schematic I designed for the UA <a class="in_text" href="https://ml4ai.github.io/tomcat/" target="_blank">ToMCAT&nbsp;Research&nbsp;Program</a> Lab.</p> -->
-						<!-- </article> -->
 
 						<!-- Education -->
 						<article id="UA_Engineering" class="sub">
-							<a href="javascript:javascript:history.go(-1)" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a>
-							<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
 							<h2 class="major">University of Arizona</h2>
-							<p style="margin-top: -30px; ">Electrical & Computer Engineering:</p>
+							<p style="margin-top: -30px;">Electrical & Computer Engineering:</p>
 							<span class="image main"><img src="images/UA_Engineering3.jpg" alt="" /></span>
 							<p style="margin-top: -2rem;"><b>Bachelor of Science in Electrical & Computer Engineering (B.S.E.E.) - 1985</b></p>
 							<ul style="list-style-type:disc; margin-top: -2rem; line-height: 1.4rem; columns: 2;-webkit-columns: 2;-moz-columns: 2;">
@@ -267,12 +252,10 @@
 							<p style="margin-top: -1.8rem; line-height: 1.2rem;">One of my most rememberable instructors was <b>Prof.&nbsp;John&nbsp;Thiess,&nbsp;E.E.</b>
 								He was a great professor, mentor, and friend to me. He taught me how to be a great engineer.</p> 
 						</article>
-						
+
 						<article id="Special_Projects_HS" class="sub">
-							<a href="javascript:javascript:history.go(-1)" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a>
-							<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
 							<h2 class="major">Special Projects HS</h2>
-							<p style="margin-top: -30px; ">(now called University HS)</p>
+							<p style="margin-top: -30px;">(now called University HS)</p>
 							<span class="image main"><img src="images/UniversityHS1.jpg" alt="" /></span>
 							<!-- <span class="image main"><img src="images/UniversityHS2.jpg" alt="" /></span> -->
 							<p style="margin-top: -1.5rem;"><b>Associate Electrical Engineer Technology (A.E.E.T.) - 1979</b></p>
@@ -299,146 +282,170 @@
 								</ul>
 						</article>
 
+
 						<!-- About -->
-							<article id="about">
-								<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
-								<h2 class="major">About</h2>
-								<!-- <span class="image main"><img src="images/About_Me1.jpg" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/About_Me1-cropped.jpg" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/About_Me2-cropped.jpg" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/About_Me3.jpg" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/About_Me3-cropped.jpg" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/About_Me4.jpg" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/About_Me4-cropped.jpg" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/About_Me5.jpg" alt="" /></span> -->
-								<span class="image main"><img src="images/About_Me5-cropped.jpg" alt="" /></span>
-								<!-- <span class="image main"><img src="images/Me_Wild1_cropped.gif" alt="" /></span> -->
-								<!-- <span class="image main"><img src="images/Me_At_Desk.jpg" alt="" /></span> -->
-								<p style="margin-top: -1.5rem;"><b>Rick Champlin</b><span style="float:right;"><a class="in_text" href="docs/Rick_Champlin-Resume_Web.pdf" target="_blank">My&nbsp;Online&nbsp;Resume</a></span><br />
-									Born and raised in Tucson, AZ (true&nbsp;Tucsonan)&nbsp;&nbsp;&nbsp; Married&nbsp;with&nbsp;2&nbsp;boys.</p>
-								<p>
-									I have been an Electronic Technician, Electronic Engineer or Software Engineer my entire working career.
-								    Even as a teenager in High School, my first real job was as an Electronic Technician in the Stage Department for the Tucson Community Center.
-									While most of my friends were working in fast food restaurants or as babysitters as their first jobs, I was trouble shooting and repairing audio & sound equipment for the TCC and the City of Tucson.
-									Even as a young teenage (way before the internet and before the PC), I learned to program on a breadboard computer I had built, TRS 80s, SIMs and the School District’s DEC PDP11 Mainframe.
-									I was designing & building electronic circuits and programming them as my main hobby and interest.
-									I studied and received my Technician’s Amateur Radio License when I was about 15 years old and my 2nd Class FCC Commercial License at about 17 years old.
-								</p>
-									
-								<p>
-									I have been working for my current employer, ITCAP Inc, for over 30 years. In those 30 years, I have designed developed and programmed hundreds of applications & databases for both in house use and other companies/entities.
-									Pretty much all of ITCAP’s applications, systems and databases, I have designed and developed over the years.
-									I have been contracted to designed, developed and program applications for over 50 different companies & clients (ITCAP dba DRA Consulting).
-									A lot of those applications are still in use today.
-									I have been in my current position, ITCAP’s VP of Information Technology, CIO and Director of Software Development for over the last 20 years.
-								</p>
-								<p>
-									I am a very experienced software, database and application developer & engineer.
-									I am a hard worker and, as my record shows, always very dedicated to my job and assigned tasks.
-									All my life, I have been a good self learner.
-									I learn new things very quickly and have always been a good team player.
-								</p>
-							</article>
+						<article id="about" >
+							<h2 class="major">About</h2>
+							<!-- <span class="image main"><img src="images/About_Me1.jpg" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/About_Me1-cropped.jpg" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/About_Me2-cropped.jpg" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/About_Me3.jpg" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/About_Me3-cropped.jpg" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/About_Me4.jpg" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/About_Me4-cropped.jpg" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/About_Me5.jpg" alt="" /></span> -->
+							<span class="image main"><img src="images/About_Me5-cropped.jpg" alt="" /></span>
+							<!-- <span class="image main"><img src="images/Me_Wild1_cropped.gif" alt="" /></span> -->
+							<!-- <span class="image main"><img src="images/Me_At_Desk.jpg" alt="" /></span> -->
+							<p style="margin-top: -1.5rem;"><h8>Rick Champlin</h8><span style="float:right;"><a class="in_text" href="docs/Rick_Champlin-Resume_Web.pdf" target="_blank">My&nbsp;Online&nbsp;Resume</a></span><br />
+								Born and raised in Tucson, AZ (true&nbsp;Tucsonan)&nbsp;&nbsp;&nbsp; Married&nbsp;with&nbsp;2&nbsp;boys.</p>
+								
+							<p><b>Hobbies and interest:</b><br />
+								Designing & building electronic circuits and programming them has always been my main hobby.
+								Even as a young teenage (way before the internet and before the PC), I learned to program on a breadboard computer I had built,
+								TRS 80s, SIMs and the School District’s DEC PDP11 Mainframe.<br />
+								I studied and received my Technician’s Amateur Radio License when I was about 15 years old and my 2nd Class FCC Commercial License at about 17 years old.<br />
+								Now days, I love spending time with my family, hiking, bicycling and going on trips together (I still enjoy working on electronic projects around the house).
+							</p>
+							
+							<p><b>Early in my career:</b><br />
+								I have been an Electronic Technician, Electronic Engineer or Software Engineer my entire working career.
+								Even as a teenager in High School, my first real job was as an Electronic Technician in the Stage Department for the Tucson Community Center.
+								While most of my friends were working in fast food restaurants or as babysitters as their first jobs,
+								I was trouble shooting and repairing audio & sound equipment for the TCC and the City of Tucson.
+							</p>
+							
+							<p id="about_hs"><b>High School:</b><br />
+								At Rincon HS, I was very involved in my Electronics, Mathematics and Science Classes.
+								I became the teachers assistant in the Electronics Class and ran the technical part of the school's radio station.<br />
+								My junior and senior years, because I was accelerated in electronics and math, my parents enrolled me in a program called<br />
+								"<a class="full_text" href="javascript:javascript:do_link_to('#Special_Projects_HS', '', 'about_hs');">Special Projects HS (now called University HS)</a>".<br />
+								At Special Projects, I was able to take AP Electronics, AP Physics and AP Mathematics classes.
+								Also, I was the Electronics Club President and the Computer Club President.
+								As a fundraiser for the Electronics Club, I developed and programmed a "Student Matching" software program that ran on the
+								School District’s DEC PDP11 Mainframe and involved over 800 students at 5 different High Schools in Tucson.
+								Graduating from Special Projects gave me the equivalents of an Associates Degree in Electrical Engineering (A.S.E.E.).
+							</p>
+								
+							<p id="about_itcap">
+								<a class="full_text" href="javascript:javascript:do_link_to('#work', 'work_itcap', 'about_itcap');"><b>ITCAP Inc:</b></a><br />
+								I worked at ITCAP Inc, for over 30 years.
+								My position was VP of Information Technology, CIO and Director of Software Development.
+								In those 30 years,
+								I have designed developed and programmed hundreds of applications & databases for both in house use and other companies/entities.
+								Pretty much all of ITCAP’s applications, systems and databases, I designed and developed over the years.
+								I was contracted to designed, developed and program applications for over 50 different companies & clients (ITCAP dba DRA Consulting).
+								A lot of those applications are still in use today.
+							</p>
+							<p>
+								I am a very experienced software, database and application developer & engineer.
+								I am a hard worker and, as my record shows, always very dedicated to my job and assigned tasks.
+								All my life, I have been a good self learner.
+								I learn new things very quickly and have always been a good team player.
+							</p>
+						</article>
+
 
 						<!-- Contact -->
-							<article id="contact">
-								<a href="#" id="home_button" class="home_button" title="Home"><span class="fa fa-home"></span></a>
-								<!-- <span id="sending_message" class="fa fa-spinner fa-pulse"></span> -->
-								<h2 class="major">Contact</h2>
-								<!-- <form method="post" action="#"> -->
-								<!-- <form id="message" method="post" action="http://10.0.1.26:5500/index.html#thanks" onsubmit="save_message_fields();"> -->
-								<!-- <form id="message" method="post" action="#thanks">  -->
-								<!-- <form id="form_message" method="post" action="https://formsubmit.co/rchamplin@arizona.edu" onsubmit="save_message_fields();"> -->
-								<!-- <form id="form_message" method="post" action="https://formsubmit.co/rchamplin@email.arizona.edu" onsubmit="save_message_fields();" onreset="do_message_reset();"> -->
-								<!-- <form id="form_message"  onsubmit="save_message_fields();" onreset="do_message_reset();"> -->
-								<form id="form_message" method="post" action="https://formsubmit.co/rchamplin@itcap.com" onsubmit="save_message_fields();"  onreset="do_message_reset();">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field" id="message_box">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-											<div id="sending_message_div"><span id="sending_message_spinner" class="fa fa-spinner fa-pulse"></span><span id="sending_message_text">SENDING</span></div>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary"></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-									<input type="hidden" name="_next" value="https://rchamplin.github.io/portfolio/#thanks">
-									<!-- <input type="hidden" name="_next" value="http://10.0.1.26:5500/index.html#thanks"> -->
-									<input type="hidden" name="_captcha" value="false">
-									<input type="hidden" name="_url" value="https://rchamplin.github.io/portfolio/index.html">
-									<!-- <input type="hidden" name="_url" value="http://10.0.1.26:5500/index.html"> -->
-								</form>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/rick-champlin-39a67194/" class="icon brands fa-linkedin-in" target="_blank" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/rchamplin" class="icon brands fa-github" target="_blank" title="GitHub"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.facebook.com/rick.champlin.5" class="icon brands fa-facebook-f" target="_blank" title="Facebook"><span class="label">Facebook</span></a></li>
-									<span style="float:right;"><a class="in_text" href="docs/Rick_Champlin-Resume_Web.pdf" target="_blank">My&nbsp;Online&nbsp;Resume</a></span>
-								</ul>
-							</article>
-
-							<article id="thanks" class="sub">
-								<a href="#contact" id="back_button" class="back_button" title="Back"><span class="fa fa-arrow-left"></span></a>
-								<h2 class="major">Thank you!</h2>
-								<p style="margin-top: -30px; "><b>Rick Champlin</b> has received your message:</p>
-								<div class="fields" id="sent_fields">
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+							<p style="margin-top: -24px; "><b>If you want my full contact info, please send me a message here,<br />
+								and I will reply with my info.</b></p>
+							<form id="form_message" method="post" action="https://formsubmit.co/rchamplin@itcap.com" onsubmit="save_message_fields();"  onreset="do_message_reset();">
+								<div class="fields">
 									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="sent_message_name" id="sent_message_name" readonly />
+										<label for="name">Your Name</label>
+										<input type="text" name="name" id="name" />
 									</div>
-									<div class="field half" style="margin-top: 2rem;">
-										<label for="email">Email</label>
-										<input type="text" name="sent_message_email" id="sent_message_email" readonly />
+									<div class="field half">
+										<label for="email">Reply Email Address</label>
+										<input type="text" name="email" id="email" />
 									</div>
-									<div class="field" style="margin-top: 2rem;">
+									<div class="field" id="message_box">
 										<label for="message">Message</label>
-										<textarea name="sent_message_text" id="sent_message_text" rows="4"  readonly></textarea>
+										<textarea name="message" id="message" rows="4"></textarea>
+										<div id="sending_message_div"><span id="sending_message_spinner" class="fa fa-spinner fa-pulse"></span><span id="sending_message_text">SENDING</span></div>
 									</div>
 								</div>
-								<script>
-									get_message_fields();
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" class="primary"></li>
+									<li><input type="reset" value="Reset" /></li>
+								</ul>
+								<input type="hidden" name="_next" value="https://rchamplin.github.io/portfolio/#thanks">
+								<!-- <input type="hidden" name="_next" value="http://10.0.1.26:5500/index.html#thanks"> -->
+								<input type="hidden" name="_captcha" value="false">
+								<input type="hidden" name="_url" value="https://rchamplin.github.io/portfolio/index.html">
+								<!-- <input type="hidden" name="_url" value="http://10.0.1.26:5500/index.html"> -->
+							</form>
+							<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/rick-champlin-39a67194/" class="icon brands fa-linkedin-in" target="_blank" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/rchamplin" class="icon brands fa-github" target="_blank" title="GitHub"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.facebook.com/rick.champlin.5" class="icon brands fa-facebook-f" target="_blank" title="Facebook"><span class="label">Facebook</span></a></li>
+								<span style="float:right;"><a class="in_text" href="docs/Rick_Champlin-Resume_Web.pdf" target="_blank">My&nbsp;Online&nbsp;Resume</a></span>
+							</ul>
+						</article>
 
-									function save_message_fields() {
-										document.getElementById("sending_message_div").style.display="block";
-										localStorage.setItem("sent_message_name", document.getElementById("name").value);
-										localStorage.setItem("sent_message_email", document.getElementById("email").value);
-										localStorage.setItem("sent_message_text", document.getElementById("message").value);
+
+						<!-- Thank You -->
+						<article id="thanks" class="sub">
+							<h2 class="major">Thank you!</h2>
+							<p style="margin-top: -30px; "><b>Rick Champlin</b> has received your message:</p>
+							<div class="fields" id="sent_fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="sent_message_name" id="sent_message_name" readonly />
+								</div>
+								<div class="field half" style="margin-top: 2rem;">
+									<label for="email">Email</label>
+									<input type="text" name="sent_message_email" id="sent_message_email" readonly />
+								</div>
+								<div class="field" style="margin-top: 2rem;">
+									<label for="message">Message</label>
+									<textarea name="sent_message_text" id="sent_message_text" rows="4"  readonly></textarea>
+								</div>
+							</div>
+							<script>
+								get_message_fields();
+
+								function save_message_fields() {
+									document.getElementById("sending_message_div").style.display="block";
+									localStorage.setItem("sent_message_name", document.getElementById("name").value);
+									localStorage.setItem("sent_message_email", document.getElementById("email").value);
+									localStorage.setItem("sent_message_text", document.getElementById("message").value);
+									localStorage.setItem("message_sent", "yes");
+								}
+
+								function get_message_fields() {
+									if (localStorage.getItem("sent_message_name") != "" || localStorage.getItem("sent_message_email") != "" || localStorage.getItem("sent_message_text")) {
+										document.getElementById("sent_fields").style.display="block";
+										document.getElementById("sent_message_name").value = localStorage.getItem("sent_message_name");
+										document.getElementById("sent_message_email").value = localStorage.getItem("sent_message_email");
+										document.getElementById("sent_message_text").innerHTML = localStorage.getItem("sent_message_text");
+									} else {
+										document.getElementById("sent_fields").style.display="none";
 									}
 
-									function get_message_fields() {
-										if (localStorage.getItem("sent_message_name") != "" || localStorage.getItem("sent_message_email") != "" || localStorage.getItem("sent_message_text")) {
-											document.getElementById("sent_fields").style.display="block";
-											document.getElementById("sent_message_name").value = localStorage.getItem("sent_message_name");
-											document.getElementById("sent_message_email").value = localStorage.getItem("sent_message_email");
-											document.getElementById("sent_message_text").innerHTML = localStorage.getItem("sent_message_text");
-										} else {
-											document.getElementById("sent_fields").style.display="none";
-										}
+									localStorage.setItem("sent_message_name", "");
+									localStorage.setItem("sent_message_email", "");
+									localStorage.setItem("sent_message_text", "");
+									localStorage.setItem("link_return", "");
+									localStorage.setItem('scroll_to_id', "");
+									if (localStorage.getItem("message_sent") != "" ) {
+										document.getElementById("float_back_button").style.animation = "hfadeInOut 1s linear 1 forwards";
+										localStorage.setItem("message_sent", "");
+										localStorage.setItem("back_botton_url", "#contact");
+									}
+								}
+								
+								function do_message_reset() {
+									document.getElementById("sending_message_div").style.display="none";
+									localStorage.setItem("sent_message_name", "");
+									localStorage.setItem("sent_message_email", "");
+									localStorage.setItem("sent_message_text", "");
+								}
 
-										// do_message_reset();
-										// document.getElementById("sending_message_div").style.display="none";
-										localStorage.setItem("sent_message_name", "");
-										localStorage.setItem("sent_message_email", "");
-										localStorage.setItem("sent_message_text", "");
-    								}
-									
-									function do_message_reset() {
-										document.getElementById("sending_message_div").style.display="none";
-										localStorage.setItem("sent_message_name", "");
-										localStorage.setItem("sent_message_email", "");
-										localStorage.setItem("sent_message_text", "");
-    								}
-									
-								</script>
-							</article>
+							</script>
+						</article>
 	
 					</div>
 
@@ -459,5 +466,52 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/simplebar.min.js"></script>
+			<script>
+
+				function do_link_to(to_url, to_scroll_id, back_scroll_id) {
+					localStorage.setItem("link_return", back_scroll_id);
+					localStorage.setItem("back_botton_url", "");
+					if (to_scroll_id != "") {
+						localStorage.setItem('scroll_to_id',to_scroll_id);
+						window.setTimeout(function () {
+							do_scroll_to_id();
+						}, 1000);
+					} 
+					if (to_url != "") {
+						location.href = to_url;	
+						document.getElementById("float_back_button").style.animation = "hfadeInOut 2s linear 1 forwards";
+					} 
+				}
+
+				function do_back_button() {
+					window.setTimeout(function () {
+						document.getElementById("float_back_button").style.animation = "hfadeInOut .0001s linear .0001s backwards";
+						if (localStorage.getItem("back_botton_url") != "") {
+							location.href = localStorage.getItem("back_botton_url");
+							localStorage.setItem("back_botton_url", "");
+						} else {
+							history.go(-2);
+						}
+							
+						if (localStorage.getItem("link_return") != "") {
+							localStorage.setItem('scroll_to_id', localStorage.getItem("link_return"));
+							localStorage.setItem("link_return", "");
+							window.setTimeout(function () {
+								do_scroll_to_id();
+							}, 1000);
+						}
+					}, 1000);
+				}
+				
+				function do_scroll_to_id() {
+					if (localStorage.getItem("scroll_to_id") != "") {
+						var scrollDiv = document.getElementById(localStorage.getItem("scroll_to_id")).offsetTop;
+						window.scrollTo({ top: scrollDiv, behavior: 'smooth'});
+						localStorage.setItem("scroll_to_id", "");
+					}
+				}
+
+			</script>
+
 	</body>
 </html>
