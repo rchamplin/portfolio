@@ -62,7 +62,6 @@ a.full_text {
 
 a.full_text:hover, a.full_text:hover * {
 	color:rgb(130, 238, 130);
-	/* font-weight:bold; */
 }
 
 ol, ul {
@@ -125,6 +124,66 @@ input, select, textarea {
 	font-size:.8rem;
 	margin-left: -4.5rem;
 }
+
+#float_home_button {
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	font-size:12pt;
+	font-weight: bold;
+	color:aquamarine;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 2px aquamarine;
+	text-decoration: none;
+	display:inline-block;
+	height: 2.25rem;
+	line-height: 2.25rem;
+	text-align: center;
+	width: 2.25rem;
+	z-index: 99;
+	opacity: 0;
+	animation: hfadeInOut 1s linear 1 forwards;
+
+}
+@keyframes hfadeInOut {
+		0% {
+		  opacity: 0;
+		}
+		100% {
+		  opacity: 1;
+		}
+}
+
+
+#float_home_button:hover {
+	background-color:aquamarine;
+	color: black;
+}
+
+#float_back_button {
+	position:fixed;
+	top: 1.5rem;
+	left: 1.5rem;
+	font-size:12pt;
+	font-weight: bold;
+	color:aquamarine;
+	border-radius: 20%;
+	box-shadow: inset 0 0 0 2px aquamarine;
+	text-decoration: none;
+	display:inline-block;
+	height: 2.1rem;
+	line-height: 2.1rem;
+	text-align:center;
+	width: 2.1rem;
+	z-index: 99;
+	opacity: 0;
+}
+  
+#float_back_button:hover {
+	background-color:aquamarine;
+	color: black;
+}
+
 
 /* Basic */
 
@@ -1611,7 +1670,7 @@ input, select, textarea {
 		z-index: 3;
 	}
 
-	
+		
 		#main article {
 			-moz-transform: translateY(0.25rem);
 			-webkit-transform: translateY(0.25rem);
@@ -1639,93 +1698,25 @@ input, select, textarea {
 				opacity: 1;
 			}
 
+
 			#main article .close {
 				display:none;
-				/* position: absolute;
-				top: 0;
-				right: 0;
-				width: 4rem;
-				height: 4rem;
-				cursor: pointer;
-				text-indent: 4rem;
-				overflow: hidden;
-				white-space: nowrap; */
 			}
 
-			/* #home_button {
-				position: absolute;
-				top: .5rem;
-				right: .7rem;
-				font-size:12pt;
-				font-weight: bold;
-				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				display: inline-block;
-				height: 2.25rem;
-				line-height: 2.25rem;
-				text-align: center;
-				width: 2.25rem;
-			}
 			  
 			#home_button:hover {
 				background-color:rgba(127, 255, 212, 0.445);
 				color:#ffffff;
 			} */
 
-			/* #back_button {
-				position: absolute;
-				top: .5rem;
-				left: .5rem;
-				font-size:9pt;
-				font-weight: bold;
-			}
 			  
 			#back_button:hover {
 				background-color:rgba(127, 255, 212, 0.445);
 				color: black;
 			} */
 			
-			  /* #main article .close:before {
-					-moz-transition: background-color 0.2s ease-in-out;
-					-webkit-transition: background-color 0.2s ease-in-out;
-					-ms-transition: background-color 0.2s ease-in-out;
-					transition: background-color 0.2s ease-in-out;
-					content: '';
-					display: block;
-					position: absolute;
-					top: 0.75rem;
-					left: 0.75rem;
-					width: 2.5rem;
-					height: 2.5rem;
-					border-radius: 100%;
-					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
-					background-size: 20px 20px;
-					background-repeat: no-repeat;
-				}
-
-				#main article .close:hover:before {
-								background-color: rgba(255, 255, 255, 0.075);
-					background-color:crimson;
-				}
-
-				#main article .close:active:before {
-					background-color: rgba(255, 255, 255, 0.175);
-				} */
 
 		@media screen and (max-width: 736px) {
-
-			/* #main article {
-				padding: 3.5rem 2rem 0.5rem 2rem ;
-			}
-
-				#main article .close:before {
-					top: 0.875rem;
-					left: 0.875rem;
-					width: 2.25rem;
-					height: 2.25rem;
-					background-size: 14px 14px;
-				} */
 
 		}
 
@@ -1787,7 +1778,7 @@ input, select, textarea {
 				font-size:12pt;
 				font-weight: bold;
 				border-radius: 20%;
-				box-shadow: inset 0 0 0 1px #ffffff;
+				box-shadow: inset 0 0 0 2px #ffffff;
 				display:inline-block;
 				height: 2.1rem;
 				line-height: 2.1rem;
@@ -1807,8 +1798,8 @@ input, select, textarea {
 				font-size:12pt;
 				font-weight: bold;
 				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
-				display: inline-block;
+				box-shadow: inset 0 0 0 2px #ffffff;
+				display:inline-block;
 				height: 2.25rem;
 				line-height: 2.25rem;
 				text-align: center;
