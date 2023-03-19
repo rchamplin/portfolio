@@ -206,6 +206,9 @@
 					if (!$body.hasClass('is-article-visible'))
 						return;
 
+				// Hide "float_back_button"
+				document.getElementById("float_back_button").style.animation = "hfadeInOut .0001s linear .0001s backwards";
+
 				// Add state?
 					if (typeof addState != 'undefined'
 					&&	addState === true)
@@ -346,6 +349,7 @@
 
 						// Hide.
 							$main._hide();
+
 
 					}
 
